@@ -52,7 +52,8 @@
 # 'python3 chrdprog.py filename.ext' to run the program.
 #
 # Revision History:
-# v1.0 - Oct 2026 - Initial version.
+# v1.00 - Oct 2026 - Initial version.
+# v1.01 - Oct 2026 - Change timestampes to minutes & seconds
 #
 # Known Issues:
 #   - Limited Error Checking
@@ -130,7 +131,9 @@ for beat_t in beat_times:
     if detected_chord != active_chord:
         # If this isn't the very first beat, print the summary for the previous chord
         if active_chord is not None:
-            time_string = "{:6.2f}".format(chord_start_time)
+#           time_string = "{:6.2f}".format(chord_start_time)
+            minutes, seconds = divmod(chord_start_time, 60)
+            time_string = f"{int(minutes):02d}:{seconds:05.2f}"
             print("Start Time: " + time_string + "s | Chord: " + active_chord.ljust(6) + " | Duration: " + str(beat_count) + " beats")
 
         # Reset trackers for the newly detected chord
@@ -143,7 +146,9 @@ for beat_t in beat_times:
 
 # 3. Print the final chord of the song after the loop finishes
 if active_chord is not None:
-    time_string = "{:6.2f}".format(chord_start_time)
+#   time_string = "{:6.2f}".format(chord_start_time)
+    minutes, seconds = divmod(chord_start_time, 60)
+    time_string = f"{int(minutes):02d}:{seconds:05.2f}"
     print("Start Time: " + time_string + "s | Chord: " + active_chord.ljust(6) + " | Duration: " + str(beat_count) + " beats")
 
 print("\n--- Processing Complete ---")
