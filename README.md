@@ -11,21 +11,23 @@ $ python chrdprog.py secret.wav
 Tracking beats...
 Extracting chords via Chordino...
 
-Estimated Tempo: 133.93 BPM
+Estimated Tempo: 106.13 BPM
 
 --- Chord Timeline (Grouped by Beat Counts) ---
-Start Time:   0.38s | Chord: E      | Duration: 12 beats
-Start Time:   5.79s | Chord: C#m    | Duration: 4 beats
-Start Time:   7.58s | Chord: A      | Duration: 4 beats
-Start Time:   9.38s | Chord: B      | Duration: 4 beats
-Start Time:  11.18s | Chord: E      | Duration: 4 beats
-Start Time:  12.99s | Chord: C#m    | Duration: 4 beats
-Start Time:  14.81s | Chord: A      | Duration: 4 beats
-Start Time:  16.61s | Chord: B      | Duration: 4 beats
-Start Time:  18.42s | Chord: E      | Duration: 4 beats
-Start Time:  20.22s | Chord: C#m    | Duration: 4 beats
-Start Time:  22.04s | Chord: A      | Duration: 4 beats
-Start Time:  23.84s | Chord: B      | Duration: 4 beats
+Start Time: 00:00.16s | Chord: N      | Duration: 1 beats
+Start Time: 00:00.71s | Chord: A      | Duration: 8 beats
+Start Time: 00:05.21s | Chord: D      | Duration: 2 beats
+Start Time: 00:06.33s | Chord: Dmaj7  | Duration: 2 beats
+Start Time: 00:07.43s | Chord: E      | Duration: 3 beats
+Start Time: 00:09.13s | Chord: A      | Duration: 8 beats
+Start Time: 00:13.65s | Chord: D      | Duration: 5 beats
+Start Time: 00:16.46s | Chord: E7     | Duration: 3 beats
+Start Time: 00:18.15s | Chord: A      | Duration: 8 beats
+Start Time: 00:22.69s | Chord: D      | Duration: 4 beats
+Start Time: 00:24.95s | Chord: E      | Duration: 4 beats
+Start Time: 00:27.22s | Chord: A      | Duration: 8 beats
+Start Time: 00:31.73s | Chord: D      | Duration: 4 beats
+Start Time: 00:34.01s | Chord: E      | Duration: 4 beats
 ...
 ```
 This shows the start of a song that is in the Key of E and in 4:4 time. There are two bars of intro then it hits the chord progression of E Cm A B (or I vi IV V). When I was working on a version to play on the guitar, I ended up transposing this to the Key of G so I could use relatively easy to play chords (G Em C D) which also better suited my voice.
